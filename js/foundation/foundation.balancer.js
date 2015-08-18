@@ -33,7 +33,7 @@
 		},
 		
 		balance : function (balancer, settings) {		
-			this.S('ul[data-balancer]', this.scope).each(function () {	
+			this.S('ul[data-balancer]', this.scope).each(function () {
 				var grid;
 				var blocks = $(this).children('li').length;
 				
@@ -41,10 +41,33 @@
 				var classes = $(this).attr("class").split(" ");
 				for (var c = 0; c <= classes.length-1; c++) {
 					var screenSize = matchMedia(Foundation.media_queries[classes[c].slice(0, classes[c].indexOf("-"))+'-only']).matches;
+					var gridMediaSize = classes[c].slice(0, classes[c].indexOf("-"));
+					
+					//xl or xxl
+					if (Foundation.utils.is_large_up() == true && gridMediaSize == "large") {
+						grid = parseInt(classes[c].slice(classes[c].lastIndexOf("-")+1));
+						break;
+					}
+					
+					//small only
+					if (Foundation.utils.is_small_up() == true && gridMediaSize == "small") {
+						grid = parseInt(classes[c].slice(classes[c].lastIndexOf("-")+1));
+					}
+					
+					//large only
+					if (Foundation.utils.is_small_up() == true && gridMediaSize == "large") {
+						grid = 1;
+					}
+					
 					if (screenSize == true) {
 						grid = parseInt(classes[c].slice(classes[c].lastIndexOf("-")+1));
 						break;
 					}
+				}
+				
+				//if xl or xxl
+				if (Foundation.utils.is_large_up() == true) {
+					
 				}
 				
 				//balance the block
