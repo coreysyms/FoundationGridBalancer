@@ -14,7 +14,7 @@ You must use either small-block-grid-# or large-block-grid-# or both or all 3 sm
             <li>2</li>
             <li>3</li>
             <li>4</li>
-            <li>5</li>
+            <li>5</li> <!-- This <li> will center since it's not a multiple of 4 //-->
         </ul>
     </div>
 </div>
