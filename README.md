@@ -34,4 +34,4 @@ $(document).foundation({
 ```
 
 #Demos
-You can view examples here: http://tangerineindustries.com/download/foundation-balancer/respect.html and http://tangerineindustries.com/download/foundation-balancer/disrespect.html
+You can view examples here: http://www.tangerineindustries.com/download/foundation-balancer/respect.html and http://www.tangerineindustries.com/download/foundation-balancer/disrespect.html
