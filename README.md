@@ -22,7 +22,7 @@ You must use either small-block-grid-# or large-block-grid-# or both or all 3 sm
 
 #Settings
 Balancer only has one setting at this time. respectSiblingWidth.
-Setting respectSiblingWidth to false will span the remaining ```<li>``` across the width of the parent ```<ul>```
+Setting respectSiblingWidth to false (default is true) will span the remaining ```<li>``` across the width of the parent ```<ul>```
 View disrespect.html for an example.
 
 To set respectSiblingWidth to false, do so at initalization.
