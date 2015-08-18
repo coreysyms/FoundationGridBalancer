@@ -4,6 +4,7 @@ Balances (centers) odd numbered remaining blocks for Foundations Block Grid - EX
 # To Use
 Apply "data-balancer" attribute to any ```<ul>``` block-grid.
 Balancer will respect all media query layouts for the grid and "center" any remaining blocks that don't add up to the grid.
+You must use either small-block-grid-# or large-block-grid-# or both or all 3 small, medium, and large for grid layouts.
 
 ```
 <div class="row">
