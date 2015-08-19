@@ -32,10 +32,11 @@
 			//none i can really think of
 		},
 		
-		balance : function (balancer, settings) {		
+		balance : function (balancer, settings) {	
 			this.S('ul[data-balancer]', this.scope).each(function () {
 				var grid;
 				var blocks = $(this).children('li').length;
+				var rtl = Foundation.rtl ? 'margin-right' : 'margin-left';
 				
 				//test over the media queries and the classes to see what media query is active and which class to match
 				var classes = $(this).attr("class").split(" ");
@@ -65,21 +66,18 @@
 					}
 				}
 				
-				//if xl or xxl
-				if (Foundation.utils.is_large_up() == true) {
-					
-				}
-				
-				//balance the block
-				$(this).find('li').css({"width":(100 / grid)+"%","margin-left":0});
+				//balance the blocks
+				$(this).find('li').css("width", (100 / grid)+"%");
+				$(this).find('li').css(rtl,0);
 				 
 				 var offset = blocks % grid;
+				 
 				 for (var b = 0; b <= blocks % grid; b++) {
 					if (Foundation.libs.balancer.settings.respectSiblingWidth == false) {
 						$(this).find('li').eq(blocks-b).css("width",(100 / offset)+"%");
 					} else {
 						if (b == offset) {
-							$(this).find('li').eq(blocks-b).css({"margin-left":(((grid - offset) * .5) * (100 / grid))+"%"});	
+							$(this).find('li').eq(blocks-b).css(rtl, (((grid - offset) * .5) * (100 / grid))+"%");	
 						}
 					}
 				 }
