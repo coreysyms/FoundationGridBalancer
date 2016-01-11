@@ -55,6 +55,11 @@
 						grid = parseInt(classes[c].slice(classes[c].lastIndexOf("-")+1));
 					}
 					
+					//medium only
+					if (Foundation.utils.is_small_up() == true && gridMediaSize == "medium") {
+						grid = 1;
+					}
+					
 					//large only
 					if (Foundation.utils.is_small_up() == true && gridMediaSize == "large") {
 						grid = 1;
