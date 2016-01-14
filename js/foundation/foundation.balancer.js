@@ -72,17 +72,17 @@
 				}
 				
 				//balance the blocks
-				$(this).find('li').css("width", (100 / grid)+"%");
-				$(this).find('li').css(rtl,0);
+				$(this).children('li').css("width", (100 / grid)+"%");
+				$(this).children('li').css(rtl,0);
 				 
 				 var offset = blocks % grid;
 				 
 				 for (var b = 0; b <= blocks % grid; b++) {
 					if (Foundation.libs.balancer.settings.respectSiblingWidth == false) {
-						$(this).find('li').eq(blocks-b).css("width",(100 / offset)+"%");
+						$(this).children('li').eq(blocks-b).css("width",(100 / offset)+"%");
 					} else {
 						if (b == offset) {
-							$(this).find('li').eq(blocks-b).css(rtl, (((grid - offset) * .5) * (100 / grid))+"%");	
+							$(this).children('li').eq(blocks-b).css(rtl, (((grid - offset) * .5) * (100 / grid))+"%");	
 						}
 					}
 				 }
