@@ -1,5 +1,5 @@
 # FoundationGridBalancer
-Balances (centers) odd numbered remaining blocks for Foundations Block Grid - EX. 4 up grid with 5 blocks leaves last block centered on next line
+Balances (centers) odd numbered remaining blocks for Foundation 6 Block Grid - EX. 4 up grid with 5 blocks leaves last block centered on next line
 
 # To Use
 Call ```<script src="js/vendor/foundation.balancer.js"></script>``` after your foundation.js call
