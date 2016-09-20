@@ -1,9 +1,10 @@
 !!function ($) {
 
   /**
-   * Balancer module.
+   * Foundation Grid Balancer module.
    * @module foundation.balancer
    * @requires foundation.util.mediaQuery
+   * 
    */
 
   var Balancer = function () {
@@ -150,7 +151,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 
 /*
- * Foundation Grid Balancer
+ * Foundation 5 Grid Balancer (incase anyone needs the old version)
  * http://tangerineindustries.com
  * Copyright 2015, Corey Snyder
  * Free to use under the MIT license.
