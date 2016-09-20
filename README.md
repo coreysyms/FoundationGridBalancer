@@ -2,6 +2,7 @@
 Balances (centers) odd numbered remaining blocks for Foundations Block Grid - EX. 4 up grid with 5 blocks leaves last block centered on next line
 
 # To Use
+Call ```<script src="js/vendor/foundation.balancer.js"></script>``` after your foundation.js call
 Apply "data-balancer" attribute to any ```<div class=row">``` block-grid.
 Balancer will respect all media query layouts for the grid and "center" any remaining blocks that don't add up to the grid.
 Use any or all of the small, medium or large up grid layouts.
