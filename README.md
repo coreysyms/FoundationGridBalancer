@@ -2,37 +2,39 @@
 Balances (centers) odd numbered remaining blocks for Foundations Block Grid - EX. 4 up grid with 5 blocks leaves last block centered on next line
 
 # To Use
-Apply "data-balancer" attribute to any ```<ul>``` block-grid.
+Apply "data-balancer" attribute to any ```<div class=row">``` block-grid.
 Balancer will respect all media query layouts for the grid and "center" any remaining blocks that don't add up to the grid.
-You must use either small-block-grid-# or large-block-grid-# or both or all 3 small, medium, and large for grid layouts.
+Use any or all of the small, medium or large up grid layouts.
 
 ```
-<div class="row">
+<div class="row medium-up-3" data-balancer>
 	<div class="column">
-    	<ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-4" data-balancer>
-        	<li>1</li>
-            <li>2</li>
-            <li>3</li>
-            <li>4</li>
-            <li>5</li> <!-- This <li> will center since it's not a multiple of 4 //-->
-        </ul>
+    	<p>Hello World</p>
+    </div>
+	<div class="column">
+    	<p>Hello World</p>
+    </div>
+	<div class="column">
+    	<p>Hello World</p>
+    </div>
+	<div class="column">
+    	<p>Hello World</p>
+    </div>
+	<div class="column">
+    	<p>Hello World</p>
     </div>
 </div>
 ```
 
 #Settings
-Balancer only has one setting at this time. respectSiblingWidth.
-Setting respectSiblingWidth to false (default is true) will span the remaining ```<li>``` across the width of the parent ```<ul>```
+Balancer only has one setting at this time. data-respect-sibling-width.
+Setting data-respect-sibling-width to false (default is true) will span the remaining ```<div>'s``` across the width of the parent, filling the remaing space. ```<ul>```
 View disrespect.html for an example.
 
-To set respectSiblingWidth to false, do so at initalization.
+To set respectSiblingWidth to false:
 ```
-$(document).foundation({
-  balancer: {
-	  respectSiblingWidth:false
-  }
-});
+<div class="row medium-up-3" data-balancer data-respect-sibling-width="false">
 ```
 
 #Demos
-You can view examples here: http://www.tangerineindustries.com/download/foundation-balancer/respect.html and http://www.tangerineindustries.com/download/foundation-balancer/disrespect.html
+Download and view index.html.
