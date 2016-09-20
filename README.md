@@ -38,4 +38,4 @@ To set respectSiblingWidth to false:
 ```
 
 #Demos
-Download and view index.html, or go <a href="http://tangerineindustries.com/Foundation/grid-balancer/" target="_blank">here.</a>
+Download and view index.html, or go <a href="http://tangerineindustries.com/Foundation/grid-balancer/" target="blank">here.</a>
