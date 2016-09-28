@@ -39,3 +39,23 @@ To set respectSiblingWidth to false:
 
 #Demos
 Download and view index.html, or go <a href="http://tangerineindustries.com/Foundation/grid-balancer/" target="blank">here.</a>
+
+
+#Q AND A
+Q: It doesn't work with equalizer.
+
+A: While Foundation will **NOT** allow you to apply multiple plugins to a single element
+```
+<div class="row medium-up-3" data-equalizer data-balancer> <!--- will not work --->
+```
+You can apply equalizer in a different manor since balancer needs to be on the "row". You can wrap your grid in a div and equalize any elements you need within.
+```
+<div data-equalizer>
+   <div class="row medium-up-3" data-balancer>
+      <div class="column" data-equalizer-watch">
+         ...etc...
+      </div>
+         ...etc...
+   </div>
+</div>
+```
