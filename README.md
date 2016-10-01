@@ -30,7 +30,6 @@ Use any or all of the small, medium or large up grid layouts.
 #Settings
 Balancer only has one setting at this time. data-respect-sibling-width.
 Setting data-respect-sibling-width to false (default is true) will span the remaining ```<div>'s``` across the width of the parent, filling the remaing space. ```<ul>```
-View disrespect.html for an example.
 
 To set respectSiblingWidth to false:
 ```
