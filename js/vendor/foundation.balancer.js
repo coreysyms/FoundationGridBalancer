@@ -21,8 +21,6 @@
 
       this.$element = $(element);
       this.options = $.extend({}, Balancer.defaults, this.$element.data(), options);
-	  
-	  console.log(this)
 
       this._init();
       this._events();
