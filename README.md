@@ -46,10 +46,6 @@ To set respectSiblingWidth to false:
 <div class="row medium-up-3" data-balancer data-respect-sibling-width="false">
 ```
 
-#Demos
-You can see a demo <a href="http://tangerineindustries.com/Foundation/grid-balancer/" target="blank">here.</a>
-
-
 #Q AND A
 Q: It doesn't work with equalizer.
 
