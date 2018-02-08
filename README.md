@@ -37,7 +37,7 @@ Use any or all of the small, medium or large up grid layouts.
 </div>
 ```
 
-#Settings
+# Settings
 Balancer only has one setting at this time. ```data-respect-sibling-width```.
 Setting data-respect-sibling-width to false (default is true) will span the remaining ```<div>'s``` across the width of the parent, filling the remaing space. ```<ul>```
 
@@ -46,7 +46,7 @@ To set respectSiblingWidth to false:
 <div class="row medium-up-3" data-balancer data-respect-sibling-width="false">
 ```
 
-#Q AND A
+# Q AND A
 Q: It doesn't work with equalizer.
 
 A: While Foundation will **NOT** allow you to apply multiple plugins to a single element
