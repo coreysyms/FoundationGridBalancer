@@ -1,4 +1,6 @@
 # FoundationGridBalancer
+Note: This should only be used for legacy as flexbox is more flexable and less obstructive than JS. But to each his own!
+
 Balances (centers) odd numbered remaining blocks for Foundation 6 Block Grid - EX. 4 up grid with 5 blocks leaves last block centered on next line
 
 # To Use
